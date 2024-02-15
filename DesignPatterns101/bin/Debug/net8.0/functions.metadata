@@ -1,0 +1,218 @@
+[
+  {
+    "name": "AdapterFunctionHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Structural_Patterns.AdapterFunctionHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "structural/adapter",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "CompositeFunctionHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Structural_Patterns.CompositeFunctionHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "structural/composite",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "FactoryMethodFunctionHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Creational_Patterns.FactoryMethodFunctionHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "creational/FactoryMethod",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "SingletonFunctionHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Creational_Patterns.SingletonFunctionHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "creational/singleton",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "ObserverAddObserverHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Behavioral_Patterns.ObserverAddObserverHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "behavioral/observer/addObserver/{observerName}",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "ObserverFlagToggleHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Behavioral_Patterns.ObserverFlagToggleHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "behavioral/observer/toggleFlag",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "ObserverFunctionHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Behavioral_Patterns.ObserverFunctionHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "behavioral/observer/startLoop",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "ObserverRemoveObserverHTTP",
+    "scriptFile": "DesignPatterns101.dll",
+    "entryPoint": "DesignPatterns101.Behavioral_Patterns.ObserverRemoveObserverHTTP.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get"
+        ],
+        "route": "behavioral/observer/removeObserver/{observerName}",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]
